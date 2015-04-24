@@ -11,26 +11,37 @@ and y_train.txt with y_test.txt, the result of which is also a Y_total data fram
 Only 66 out of 561 attributes are measurements on the mean and standard deviation. 
 
 + Reads activity_labels.txt and applies descriptive activity names to name the activities in the data set:
-	walking
-	walkingupstairs
-	walkingdownstairs
-	sitting
-	standing
-	laying
 
+	walking
+	
+	walkingupstairs
+	
+	walkingdownstairs
+	
+	sitting
+	
+	standing
+	
+	laying
+	
 + The script also appropriately labels the data set with descriptive names: all feature names (attributes) 
 and activity names are converted to lower case.  
 The result is saved as "clean_final_data.txt". The names of the attributes are similar to the following:
-	tbodyacc-mean-x 
-	tbodyacc-mean-y 
-	tbodyacc-mean-z 
-	tbodyacc-std-x 
-	tbodyacc-std-y 
-	tbodyacc-std-z 
-	tgravityacc-mean-x 
-	tgravityacc-mean-y
 
-+ Finally, the script creates a 2nd, independent tidy data set with the average of each measurement for each activity and each subject. 
-The result is saved as dataset2.txt, a 180x68 data frame, where as before, the first column contains subject IDs, 
-the second column contains activity names (see below), and then the averages for each of the 66 attributes are in columns 3...68. 
-There are 30 subjects and 6 activities, thus 180 rows in this data set with averages.
+	tbodyacc-mean-x 
+
+	tbodyacc-mean-y 
+	
+	tbodyacc-mean-z 
+	
+	tbodyacc-std-x 
+	
+	tbodyacc-std-y 
+	
+	tbodyacc-std-z 
+	
+	tgravityacc-mean-x 
+	
+	tgravityacc-mean-y
+	
++ Finally, the script creates a 2nd, independent tidy data set with the average of each measurement for each activity and each subject. The result is saved as dataset2.txt
